@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./filesaver.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</head>
+<body>
+    <input type="file" id="inpFile">
+    <button type="button" id="btnUpload">Upload</button>
+    <br>
+    <br>
+    <textarea style="width: 1000px; height: 1000px;" id="resultText" placeholder="Your PDF text will appear here ...."></textarea>
+    <div>
+        <pre id="json"></pre>
+        <button type="button" onclick="downloadAsExcel()">download excel</button>
+    </div>
+    <table>
+        <tr>
+            <td>Order Number</td>
+            <td>Invoice Number</td>
+            <td>Buyer Name</td>
+            <td>Buyer Address</td>
+            <td>Invoice Date</td>
+            <td>Order Date</td>
+            <td>Product Title</td>
+            <td>HSN</td>
+            <td>Taxable Value</td>
+            <td>Discount</td>
+            <td>Tax Rate</td>
+        </tr>
+    </table>
+    <script src="helper.js"></script>
+    <!-- <script src="../index.js"></script> -->
+</body>
+</html>
